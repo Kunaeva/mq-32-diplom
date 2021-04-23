@@ -10,19 +10,19 @@ body{
   
   @font-face {
     font-family: "Open Sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    src: url(../fonts/OpenSans-Regular.woff);
     font-style: normal;
     font-weight: 400;
   }
   @font-face {
     font-family: "Open Sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    src: url(../fonts/OpenSans-Bold.woff);
      font-style: normal;
     font-weight: 700;
   }
   
   .header{
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-image: url(../img/banner-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #000;
@@ -270,7 +270,7 @@ body{
   }
   .search-btn{
      width: 48px;
-     background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+     background-image: url(../svg/search.svg);
   }
   .screenreaders{
      width: 1px;
@@ -408,19 +408,19 @@ body{
     margin-left: 33px;
   }
   .twitter{
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+    background-image: url(../svg/004-twitter.svg);
   }
   .pint {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+    background-image: url(../svg/001-pinterest.svg);
   }
   .facebook {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
+    background-image: url(../svg/002-facebook-logo.svg);
   }
   .instagram {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+    background-image: url(../svg/005-instagram.svg);
   }
   .tumbler {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+    background-image: url(../svg/003-tumblr.svg);
   }
   .all-icon{
      width: 21px;
