@@ -21,33 +21,7 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-/*Popup*/
-.popup{
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.popup::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: black;
-  opacity: 0.5;
-  background-size: cover;
-  bottom: 0;
-}
-.popup-close{
-  width: 20px;
-  height: 20px;
-}
-.popup-form{
-  background-color: #fff;
-}
+
 /*heder*/
 
 .header {
@@ -147,19 +121,19 @@ body {
 }
 
 .garden {
-  background-image: url('/img/trend1.jpg');
+  background-image: url('../img/trend1.jpg');
 }
 
 .chees {
-  background-image: url('/img/trend2.jpg');
+  background-image: url('../img/trend2.jpg');
 }
 
 .rock {
-  background-image: url('/img/trend3.jpg');
+  background-image: url('../img/trend3.jpg');
 }
 
 .limon {
-  background-image: url('/img/trend4.jpg');
+  background-image: url('../img/trend4.jpg');
 }
 
 .trend-mask {
@@ -170,6 +144,7 @@ body {
   background-position: center;
   width: 410px;
   position: relative;
+  width: 24%;
 }
 
 .trend-mask::before {
@@ -182,6 +157,7 @@ body {
   opacity: 0.5;
   background-size: cover;
   bottom: 0;
+  z-index: 0;
 }
 
 .trend-mask:last-child {
@@ -194,6 +170,8 @@ body {
   border: solid #b59f5b;
   1px;
   align-items: flex-start;
+  z-index: 1;
+  position: relative;
 }
 
 .trends-content-title {
@@ -555,9 +533,16 @@ body {
   margin-left: 3px;
 }
 
+/*shop*/
+
 .shop {
   margin-top: 57px;
 }
+
+.shop-card {
+  width: 200px;
+}
+
 .shop-card-title {
   font-size: 20px;
   text-transform: uppercase;
@@ -576,15 +561,17 @@ body {
   right: 0;
   bottom: 0;
   left: 7%;
-  position: relative;
 }
 
 .shop-card-content {
+  width: 300px;
+  min-height: 267px;
   border: 3px solid #b59f5b;
-  z-index: 1;
   padding: 58px 24px 72px;
   margin-top: -35px;
-  position: absolute;
+  margin-left: -25px;
+  position: relative;
+  р
 }
 
 .shop-text {
@@ -704,4 +691,156 @@ body {
   font-weight: 700;
   color: #999999;
   font-size: 12px;
+}
+
+/*Popup*/
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 11px;
+}
+
+.popup-content {
+  background-color: #fff;
+  position: relative;
+  max-width: 500px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.popup-title {
+  font-size: 16px;
+  margin-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.popup-close {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.popup-close-svg {
+  height: 30px;
+  width: 30px;
+  fill: red;
+}
+
+.visit-select {
+  display: block;
+  margin-top: 38px;
+}
+
+.visit span {
+  display: block;
+}
+
+.select {
+  margin-top: 10px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 12px;
+  border: none;
+  background: #f4f7f6 url('../svg/form-arrows.svg') right 15px center / 10px no-repeat;
+}
+
+.select:hover, .fields:hover {
+  outline: none;
+  border: 1px solid #b59f5b;
+}
+
+.form-radio {
+  margin-top: 20px;
+  padding-top: 8px;
+  font-size: 12px;
+  font-family: 'OpenSans', 'Arial', sans-serif;
+}
+
+.radio {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.radio-group {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.radio-text::before {
+  display: inline-block;
+  content: "";
+  background: url(../svg/form-empty-circle.svg) center / 25px no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.radio-text {
+  margin-right: 28px;
+}
+
+.radio:checked+.radio-text::before {
+  background-image: url('../svg/form-circle.svg');
+}
+
+.textarea-title {
+  display: block;
+}
+
+.fields {
+  margin-top: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 130px;
+  max-height: 200px;
+  padding: 20px;
+  background-color: #f4f7f6;
+  border: none;
+}
+
+.popup__button {
+  width: 100%;
+  margin: 25px auto 19px;
+  padding: 18px 40px;
+  background-color: #b59f5b;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 13.2px;
+}
+
+.popup__button:hover {
+  background-color: #323232;
 }
