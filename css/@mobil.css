@@ -1,0 +1,166 @@
+.header {
+    max-width: 640px;
+    background-color: #000000;
+    background: url('../img/banner-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    background-size: cover;
+    bottom: 0;
+}
+
+.conteiner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+}
+
+.header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-bottom: 174px;
+    position: relative;
+    left: 130px;
+    width: 23px;
+    height: 22px;
+    z-index: 6;
+}
+
+.header-burger:after, .header-burger:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+}
+
+.header-burger:before {
+    top: 0;
+}
+
+.header-burger:after {
+    bottom: 0;
+}
+
+.header-burger span {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 9px;
+}
+
+.logo-menu {
+    max-width: 640px;
+    margin: 0 auto;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo {
+    display: none;
+}
+
+.header-title-conteiner {
+    margin: 0 35px 100px;
+}
+
+.header-title {
+    font-size: 14px;
+}
+
+.logo2 {
+    display: block;
+    padding-bottom: 42px;
+}
+
+.menu {
+    display: none;
+}
+
+.trends-content {
+    flex-direction: column;
+}
+
+.card {
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 35px;
+}
+
+.card-line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 35px;
+    background-color: #eeeeee;
+    margin-top: 20px;
+}
+    .main {
+        max-width: 640px;
+    }
+    .trend-mask {
+        width: auto;
+        margin-bottom: 4px;
+    }
+    .trends>.trends-title {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .content {
+        margin-top: 40px;
+    }
+    .card-header {
+        padding-top: 15px;
+    }
+    .card-title {
+        font-size: 16px;
+    }
+   /* .card-text {
+       не могу понять почему карточка занимает столько  места и как это исправить
+   }*/
+
+    .sidebar {
+        margin-top: 44px;
+    }
+    .them-link-text{
+        font-size: 14px;
+    }
+    .shop-card{
+        margin-top: 4px;
+    }
+    .footer{
+        margin-top: 44px;
+    }
+    .footer-copyright{
+        margin-top: 50px;
+    }
+    @media (orientation: landscape), (max-width: 640px)  {
+        .trends-content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .trend-mask {
+            width: calc(50% - 1px);
+        }
+        .trend-mask:nth-child(even) {
+            margin-left: 1px;
+        }
+    }

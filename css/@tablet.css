@@ -1,0 +1,131 @@
+.header {
+    max-width: 1199px;
+    background-color: #000000;
+    background: url('../img/banner-bg-tablet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    background-size: cover;
+    bottom: 0;
+}
+
+.conteiner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+}
+
+.header-burger {
+    display: block;
+    position: relative;
+    left: 130px;
+    width: 23px;
+    height: 22px;
+    z-index: 6;
+}
+
+.header-burger:after, .header-burger:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+}
+
+.header-burger:before {
+    top: 0;
+}
+
+.header-burger:after {
+    bottom: 0;
+}
+
+.header-burger span {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 9px;
+}
+
+.logo-menu {
+    max-width: 1199px;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu {
+    display: none;
+}
+
+.header-title-conteiner {
+    margin-top: 103px;
+}
+
+.header-title {
+    font-size: 40px;
+}
+
+.logo2 {
+    display: none;
+}
+
+.trend-title {
+    font-size: 18px;
+}
+
+.trends-content {
+    flex-wrap: wrap;
+}
+
+.trend-mask {
+    width: calc(50% - 1px);
+    min-height: 247px;
+    padding: 0 19px 13px;
+}
+
+.trend-mask:nth-child(even) {
+    margin-left: 1px;
+}
+
+@media (orientation: landscape) and (min-width: 1199px) {
+    .trend-mask {
+        width: calc(25% - 1px);
+        min-height: 320px;
+        margin-right: 1px;
+        display: flex;
+    }
+}
+
+.content {
+    display: flex;
+    margin-top: 42px;
+    padding: 0 35px;
+}
+
+.card {
+    flex-wrap: wrap;
+}
+
+.card-text {
+    margin-top: 14px;
+}
+
+.shop-card {
+    width: calc((100%-23px)/2);
+}
