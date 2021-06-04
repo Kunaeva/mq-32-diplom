@@ -34,6 +34,9 @@
     width: 23px;
     height: 22px;
     z-index: 6;
+    margin: 0;
+
+	align-self: center;
 }
 
 .header-burger:after, .header-burger:before {
@@ -65,7 +68,8 @@
 .logo-menu {
     max-width: 1199px;
     margin: 0 auto;
-    justify-content: space-between;
+    display: flex;
+	justify-content: space-between;
     position: relative;
 }
 
@@ -79,6 +83,8 @@
 
 .header-title {
     font-size: 40px;
+    margin-top: 92px;
+    nnnnnnnyyadding: 0 23px;
 }
 
 .logo2 {
@@ -96,11 +102,33 @@
 .trend-mask {
     width: calc(50% - 1px);
     min-height: 247px;
-    padding: 0 19px 13px;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
 }
 
 .trend-mask:nth-child(even) {
-    margin-left: 1px;
+    margin-left: 2px;
+}
+.content{
+    flex-direction: row;
+}
+.card-image{
+    width: 100%;
+}
+.card-text {
+    padding-right: 60px;
+}
+.shop-content{
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.shop-card{
+    margin-bottom: 20px;
+}
+.shop-card-content{
+    padding-right: 20px;
 }
 
 @media (orientation: landscape) and (min-width: 1199px) {
@@ -116,6 +144,7 @@
     display: flex;
     margin-top: 42px;
     padding: 0 35px;
+    
 }
 
 .card {

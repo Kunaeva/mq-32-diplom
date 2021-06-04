@@ -1,5 +1,5 @@
 .header {
-    max-width: 640px;
+    max-width: 100%;
     background-color: #000000;
     background: url('../img/banner-mobile.jpg');
     background-size: cover;
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: auto;
+    width: 100%;
 }
 
 .header-burger {
@@ -67,7 +67,7 @@
 }
 
 .logo-menu {
-    max-width: 640px;
+    max-width: 100%;
     margin: 0 auto;
     flex-direction: column;
     position: relative;
@@ -113,54 +113,73 @@
     background-color: #eeeeee;
     margin-top: 20px;
 }
-    .main {
-        max-width: 640px;
+
+.trend-mask {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.trends>.trends-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main {
+    width: 100%;
+}
+
+.content {
+    margin-top: 40px;
+}
+.card-image{
+    width: 100%;
+}
+
+.card-header {
+    padding-top: 15px;
+}
+
+.card-title {
+    font-size: 16px;
+}
+.card-text{
+    width: 100%;
+}
+
+.aside {
+    width: 100%;
+}
+
+.sidebar {
+    margin-top: 44px;
+}
+
+.them-link-text {
+    font-size: 14px;
+}
+
+.shop-card {
+    margin: 4px 0 34px;
+    }
+
+.footer {
+    width: 100%;
+    margin-top: 44px;
+}
+
+.footer-copyright {
+    margin-top: 50px;
+}
+
+@media (orientation: landscape), (max-width: 640px) {
+    .trends-content {
+        display: flex;
+        flex-wrap: wrap;
     }
     .trend-mask {
-        width: auto;
-        margin-bottom: 4px;
+        width: calc(100% - 1px);
     }
-    .trends>.trends-title {
-        font-size: 14px;
-        font-weight: bold;
+    .trend-mask:nth-child(even) {
+        margin-left: 1px;
     }
-    .content {
-        margin-top: 40px;
-    }
-    .card-header {
-        padding-top: 15px;
-    }
-    .card-title {
-        font-size: 16px;
-    }
-   /* .card-text {
-       не могу понять почему карточка занимает столько  места и как это исправить
-   }*/
-
-    .sidebar {
-        margin-top: 44px;
-    }
-    .them-link-text{
-        font-size: 14px;
-    }
-    .shop-card{
-        margin-top: 4px;
-    }
-    .footer{
-        margin-top: 44px;
-    }
-    .footer-copyright{
-        margin-top: 50px;
-    }
-    @media (orientation: landscape), (max-width: 640px)  {
-        .trends-content{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .trend-mask {
-            width: calc(50% - 1px);
-        }
-        .trend-mask:nth-child(even) {
-            margin-left: 1px;
-        }
-    }
+}
