@@ -161,7 +161,9 @@
 .shop-card {
     margin: 4px 0 34px;
     }
-
+.shop-card:nth-child(n+2) {
+        margin-left: 0; 
+    }
 .footer {
     width: 100%;
     margin-top: 44px;
@@ -169,6 +171,9 @@
 
 .footer-copyright {
     margin-top: 50px;
+}
+.popup-content {
+    max-width: 250px;
 }
 
 @media (orientation: landscape), (max-width: 640px) {
