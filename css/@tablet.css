@@ -162,5 +162,5 @@
 }
 
 .shop-card {
-    width: calc((100%-23px)/2);
+    width: calc((100% - 23px)/2);
 }

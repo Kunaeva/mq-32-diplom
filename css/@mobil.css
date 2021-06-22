@@ -160,6 +160,7 @@
 
 .shop-card {
     margin: 4px 0 34px;
+    width: 100%;
     }
 .shop-card:nth-child(n+2) {
         margin-left: 0; 
